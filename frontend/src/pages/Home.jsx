@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from "@/components/ui/button";
 import bg from "/src/assets/bg.png?url";
 import img1 from "/src/assets/img1.png?url";
 import img2 from "/src/assets/img2.png?url";
@@ -87,13 +88,13 @@ const Home = () => {
                             </div>
                         </div>
                     ))}
-
                 </div>
             </div>
-            {/* <div>
-                <p>Connect today.</p>
-                <Button>Get Started</Button>
-            </div> */}
+
+            <div className='bg-white h-72 text-center'>
+                    <p className='text-4xl font-bold  pt-20 pb-8'>Connect Today.</p>
+                    <Button className='bg-black text-white rounded-xl shadow-lg'>Get Started</Button>
+            </div>
         </div>
     );
 };
